@@ -1,4 +1,4 @@
-const BASE_URL = process.env.BASE_URL || "http://localhost:4000/api";
+const BASE_URL = process.env.BASE_URL || "https://dsa-tracker-backend-0qmu.onrender.com/api";
 
 export const loginUser = async (data: { email: string; password: string }) => {
   const res = await fetch(`${BASE_URL}/auth/login`, {
